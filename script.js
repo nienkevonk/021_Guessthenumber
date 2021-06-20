@@ -1,13 +1,15 @@
 var welcome = prompt("Welkom! Wat is je naam?");
 alert("Hey " + welcome)
 
-let randomnumber = Math.floor(Math.random() * 26);
+max = parseInt(prompt("Tot welk nummer mag er geraden worden?"));
+min = 0;
+var K = 5;
+
+let randomnumber = Math.floor(Math.random() * (max - min)) + min;
 console.log(randomnumber);
 
-var numberchoosen = prompt("Voer een nummer in van 0 tot 25 om te beginnen met raden..")
+var numberchoosen = prompt("Voer een nummer in van 0 tot " + max + " om te beginnen met raden..")
 console.log(numberchoosen);
-
-var K = 5;
 
 for (i = 0; i < K; i++) {
     let z = parseInt(numberchoosen);
